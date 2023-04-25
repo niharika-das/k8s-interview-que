@@ -1,0 +1,45 @@
+- How do you monitor Kubernetes clusters?
+There are various tools that can be used to monitor Kubernetes clusters, such as Prometheus, Grafana, and Datadog. These tools can be used to monitor the health and performance of the cluster, as well as to track resource usage and identify bottlenecks. Kubernetes also has built-in monitoring capabilities, such as the Kubernetes API server and kubelet.
+
+- What is a Kubernetes deployment?
+A Kubernetes deployment is a Kubernetes object that manages the deployment of a containerized application. It provides a declarative way to manage the deployment of pods, and it can scale the number of replicas up or down based on demand. Deployments can also perform rolling updates to update the version of the application running in the cluster.
+
+- How do you scale a Kubernetes deployment?
+You can scale a Kubernetes deployment by using the kubectl scale command or by editing the deployment object directly. To scale a deployment using kubectl, you can use the following command:
+
+kubectl scale deployment my-deployment --replicas=5
+
+This will scale the deployment named "my-deployment" to 5 replicas.
+
+- What is a Kubernetes namespace?
+A Kubernetes namespace is a way to partition a Kubernetes cluster into multiple virtual clusters. It provides a way to separate resources and prevent naming collisions between objects in different environments or teams. Namespaces are used to organize and isolate resources within a cluster.
+
+- What is Kubernetes ingress?
+Kubernetes ingress is a Kubernetes object that manages external access to the services in a cluster. It provides a way to route external traffic to the appropriate service based on the request URL or other rules. Ingress can be used to load balance traffic, enforce SSL encryption, and perform other functions related to external access to the cluster.
+
+- How do you upgrade a Kubernetes cluster?
+To upgrade a Kubernetes cluster, you can use the kubeadm tool or a similar tool to upgrade the control plane nodes, and then upgrade the worker nodes. Before upgrading, it is important to carefully review the release notes and documentation to ensure that any breaking changes or compatibility issues are addressed.
+
+- What is a Kubernetes operator?
+A Kubernetes operator is a way to extend Kubernetes to manage complex stateful applications. It is a custom controller that uses Kubernetes APIs to automate the deployment, scaling, and management of an application. Operators can be used to manage databases, message queues, and other stateful applications that require more advanced management than standard Kubernetes objects provide.
+
+- What is a Kubernetes config map?
+A Kubernetes config map is a resource that provides a way to store configuration data as key-value pairs and mount it as a volume in a pod.
+
+- What is a Kubernetes secret?
+A Kubernetes secret is a resource that provides a way to store sensitive information, such as passwords, API keys, and TLS certificates, and mount it as a volume in a pod.
+
+- What is a Kubernetes StatefulSet?
+A Kubernetes StatefulSet is a resource that manages the deployment and scaling of stateful applications, such as databases, by ensuring that each pod has a stable network identity and persistent storage.
+
+- What is a Kubernetes daemon set?
+A Kubernetes daemon set is a resource that ensures that all or some nodes in a cluster run a copy of a pod.
+
+- What is a Kubernetes operator?
+A Kubernetes operator is a method of packaging, deploying, and managing a complex application as a set of custom resources in Kubernetes.
+
+- How does Kubernetes handle rolling updates?
+Kubernetes handles rolling updates by gradually replacing old pods with new ones, using a strategy called rolling update. This strategy ensures that the application remains available and responsive throughout the update process.
+
+- How does Kubernetes handle horizontal scaling?
+Kubernetes handles horizontal scaling by adding or removing replicas of a deployment or a stateful set, based on the current demand and resource availability. This strategy ensures that the application can handle varying levels of traffic and workload.
